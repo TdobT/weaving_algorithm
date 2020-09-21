@@ -3,15 +3,15 @@
 // dan@marginallyclever.com 2016-08-05
 // based on work by Petros Vrellis (http://artof01.com/vrellis/works/knit.html)
 //------------------------------------------------------
-
+// 1630
 // points around the circle
-int numberOfPoints = 117;
+int numberOfPoints = 100;
 // self-documenting
 int numberOfLinesToDrawPerFrame = 50;
 // self-documenting
-int totalLinesToDraw=3000;
+int totalLinesToDraw=10000;
 // how dark is the string being added.  1...255 smaller is lighter.
-int stringAlpha = 45;
+int stringAlpha = 75;
 // ignore N nearest neighbors to this starting point
 int skipNeighbors=5;
 // set true to start paused.  click the mouse in the screen to pause/unpause.
@@ -50,6 +50,14 @@ ArrayList<WeavingThread> lines = new ArrayList<WeavingThread>();
 
 int totalLinesDrawn=0;
 
+static final String RENDERER = JAVA2D; // JAVA2D, FX2D, P2D, P3D, OPENGL
+
+
+
+void settings() {
+  img = loadImage("bred_pitt_giovane.jpg");
+  size(img.width*2, img.height, RENDERER);
+}
 
 
 //------------------------------------------------------
@@ -60,14 +68,13 @@ int totalLinesDrawn=0;
  */
 void setup() {
   // the name of the image to load
-  img = loadImage("cropped.jpg");
-  size(1336, 668);
-  dest = createGraphics(img.width, img.height);
+  
 
+  dest = createGraphics(img.width, img.height);
   // find average color of image
   float r=0,g=0,b=0;
   int size=img.width*img.height;
-  int i;
+  int i, j;
   for(i=0;i<size;++i) {
     color c=img.pixels[i];
     r+=red(c);
@@ -75,20 +82,60 @@ void setup() {
     b+=blue(c);
   }
   dest.beginDraw();
-  dest.background(r/(float)size,g/(float)size,b/(float)size);
+  //dest.background(r/(float)size,g/(float)size,b/(float)size);
+  dest.background(255, 255, 255);
   dest.endDraw();
   
   // smash the image to grayscale
   //img.filter(GRAY);
 
+  float scale = 1.5;
   // find the size of the circle and calculate the points around the edge.
-  float maxr = ( img.width > img.height ) ? img.height/2 : img.width/2;
+  float maxr = ( img.width > img.height ) ? img.height/(10*scale) : img.width/(10*scale);
 
-  for (i=0; i<numberOfPoints; ++i) {
-    float d = PI * 2.0 * i/(float)numberOfPoints;
+  float frac = 40;
+  
+  /*
+  for (i=0; i<numberOfPoints/frac; ++i) {
+    float d = PI * 2.0 * frac * i/(float)numberOfPoints;
+    px[i] = img.width/2 + cos(d) * maxr/ (frac / 2);
+    py[i] = img.height/2 + sin(d) * maxr/ (frac / 2);
+  }
+  
+  for (i=(int)((float)numberOfPoints/frac); i<numberOfPoints; ++i) {
+    float d = PI * 2.0 * (frac / (frac-1)) * i/(float)numberOfPoints;
     px[i] = img.width/2 + cos(d) * maxr;
     py[i] = img.height/2 + sin(d) * maxr;
   }
+  
+
+  
+  int sq = (int) sqrt(numberOfPoints);
+  int basex = img.width / 4;
+  int basey = img.height / 4 - 60;
+  for (i = 0; i < sq; i++) {
+    for (j = 0; j < sq; j++) {
+      px[j + (i*10)] = basex + i * maxr;
+      py[j + (i*10)] = basey + j * maxr;
+    }
+  }
+  
+  */
+  
+  int fractions = 40;
+  int ppfract = numberOfPoints / fractions;
+  for (i = 0; i < fractions; i++) {
+    
+    float d = PI * 2.0 * i/(float)fractions;
+    
+    for (j = 1; j <= ppfract; j++) {
+      
+      px[i] = img.width/2 + cos(d) * maxr / j;
+      py[i] = img.height/2 + sin(d) * maxr / j;
+    }
+    
+  }
+  
 
   // a lookup table because sqrt is slow.
   for (i=0; i<numberOfPoints; ++i) {
@@ -99,8 +146,12 @@ void setup() {
   
   lines.add(addLine(color(255,255,255),"white"));
   lines.add(addLine(color(  0,  0,  0),"black"));
-  lines.add(addLine(color(127,127,255),"blue"));
-  lines.add(addLine(color(230, 211, 133),"yellow"));
+  //lines.add(addLine(color(  200,  120,  25),"blallo"));
+  lines.add(addLine(color(  0, 0,  200),"blue"));
+  lines.add(addLine(color(  0,  200,  0),"green"));
+  lines.add(addLine(color(  200,  100,  50),"red"));
+  //lines.add(addLine(color(127,127,255),"blue"));
+  //lines.add(addLine(color(230, 211, 133),"yellow"));
 }
 
 
@@ -216,7 +267,8 @@ void drawLine(WeavingThread wt) {
 float scoreLine(int i,int nextPoint,WeavingThread wt) {
   float dx = px[nextPoint] - px[i];
   float dy = py[nextPoint] - py[i];
-  float len = lengths[(int)abs(nextPoint-i)];//Math.floor( Math.sqrt(dx*dx+dy*dy) );
+  //float len = lengths[(int)abs(nextPoint-i)];
+  float len = (float)Math.floor( Math.sqrt(dx*dx+dy*dy) );
 
   float diff0=scoreColors(img.get((int)px[i], (int)py[i]),wt.c);
   float s,fx,fy,dc,ic,diff1,change;
