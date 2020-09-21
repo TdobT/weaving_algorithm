@@ -5,15 +5,15 @@
 //------------------------------------------------------
 
 // points around the circle
-int numberOfPoints = 188;
+int numberOfPoints = 117;
 // self-documenting
-int numberOfLinesToDrawPerFrame = 1;
+int numberOfLinesToDrawPerFrame = 50;
 // self-documenting
-int totalLinesToDraw=30000;
+int totalLinesToDraw=3000;
 // how dark is the string being added.  1...255 smaller is lighter.
 int stringAlpha = 45;
 // ignore N nearest neighbors to this starting point
-int skipNeighbors=10;
+int skipNeighbors=5;
 // set true to start paused.  click the mouse in the screen to pause/unpause.
 boolean paused=true;
 // make this true to add one line per mouse click.
