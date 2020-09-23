@@ -5,19 +5,22 @@
 //------------------------------------------------------
 // 1630
 // points around the circle
-int numberOfPoints = 100;
+int numberOfPoints = 1050;
 // self-documenting
-int numberOfLinesToDrawPerFrame = 50;
+int numberOfLinesToDrawPerFrame = 150;
 // self-documenting
-int totalLinesToDraw=10000;
+int totalLinesToDraw=500;
 // how dark is the string being added.  1...255 smaller is lighter.
-int stringAlpha = 75;
+int stringAlpha = 50;
 // ignore N nearest neighbors to this starting point
-int skipNeighbors=5;
+int skipNeighbors=0;
 // set true to start paused.  click the mouse in the screen to pause/unpause.
 boolean paused=true;
 // make this true to add one line per mouse click.
 boolean singleStep=false;
+// save the steps in a file
+String[] steps = new String[totalLinesToDraw + numberOfLinesToDrawPerFrame + 500];
+int stepPlace = 0;
 
 float CUTOFF=0;
 
@@ -55,7 +58,7 @@ static final String RENDERER = JAVA2D; // JAVA2D, FX2D, P2D, P3D, OPENGL
 
 
 void settings() {
-  img = loadImage("bred_pitt_giovane.jpg");
+  img = loadImage("venere.jpg");
   size(img.width*2, img.height, RENDERER);
 }
 
@@ -91,10 +94,9 @@ void setup() {
 
   float scale = 1.5;
   // find the size of the circle and calculate the points around the edge.
-  float maxr = ( img.width > img.height ) ? img.height/(10*scale) : img.width/(10*scale);
+  float maxr = ( img.width > img.height ) ? img.height/2 : img.width/2;
 
-  float frac = 40;
-  
+
   /*
   for (i=0; i<numberOfPoints/frac; ++i) {
     float d = PI * 2.0 * frac * i/(float)numberOfPoints;
@@ -111,30 +113,45 @@ void setup() {
 
   
   int sq = (int) sqrt(numberOfPoints);
-  int basex = img.width / 4;
-  int basey = img.height / 4 - 60;
+  int diam = ( img.width > img.height ) ? img.height / (numberOfPoints / sq) : img.width / (numberOfPoints / sq);
+  int basex = 0;
+  int basey = 0;
   for (i = 0; i < sq; i++) {
     for (j = 0; j < sq; j++) {
-      px[j + (i*10)] = basex + i * maxr;
-      py[j + (i*10)] = basey + j * maxr;
+      px[j + (i*sq)] = basex + i * diam;
+      py[j + (i*sq)] = basey + j * diam;
     }
   }
+
   
-  */
   
-  int fractions = 40;
-  int ppfract = numberOfPoints / fractions;
+  int ppfract = 4;
+  int fractions = numberOfPoints / ppfract;
+  
   for (i = 0; i < fractions; i++) {
-    
     float d = PI * 2.0 * i/(float)fractions;
-    
-    for (j = 1; j <= ppfract; j++) {
-      
-      px[i] = img.width/2 + cos(d) * maxr / j;
-      py[i] = img.height/2 + sin(d) * maxr / j;
-    }
-    
+    for (j = 0; j < ppfract; j++) {
+      px[j + i*ppfract] = img.width/2 + cos(d) * (ppfract - j) * maxr / ppfract;
+      py[j + i*ppfract] = img.height/2 + sin(d) * (ppfract - j) * maxr / ppfract;
+    }  
   }
+
+  */  
+  
+  int ppfract = 6;
+  int base_fractions = 50;
+  int pos = 0;
+  
+  for (i = 0; i < ppfract; i++) {
+    int cur_fract = base_fractions * (i+1);
+    float base_angle = PI * 2.0 / cur_fract;
+    for (j = 0; j < cur_fract; j++) {
+      px[pos] = img.width/2 + cos(base_angle * j) * (i + 1) * maxr / ppfract;
+      py[pos++] = img.height/2 + sin(base_angle * j) * (i + 1) * maxr / ppfract;
+    }
+  
+  }
+  /*
   
 
   // a lookup table because sqrt is slow.
@@ -143,15 +160,20 @@ void setup() {
     float dy = py[i] - py[0];
     lengths[i] = sqrt(dx*dx+dy*dy);
   }
+  */
+  
+  println(px);
+  println(py);
   
   lines.add(addLine(color(255,255,255),"white"));
   lines.add(addLine(color(  0,  0,  0),"black"));
-  //lines.add(addLine(color(  200,  120,  25),"blallo"));
-  lines.add(addLine(color(  0, 0,  200),"blue"));
+  lines.add(addLine(color(  100,  100,  100),"gray"));
+  lines.add(addLine(color(  150,  150,  25),"blallo"));
+  lines.add(addLine(color(  0, 100,  250),"blue"));
   lines.add(addLine(color(  0,  200,  0),"green"));
-  lines.add(addLine(color(  200,  100,  50),"red"));
+  //lines.add(addLine(color(  200,  100,  0),"red"));
   //lines.add(addLine(color(127,127,255),"blue"));
-  //lines.add(addLine(color(230, 211, 133),"yellow"));
+  //lines.add(addLine(color(230, 151, 133),"yellow"));
 }
 
 
@@ -200,6 +222,9 @@ void draw() {
     }
     image(img, width/2, 0);
     image(dest, 0, 0);
+  } else {
+    println(steps);
+    saveStrings("steps.txt", steps); 
   }
   // progress bar
   float percent = (float)totalLinesDrawn / (float)totalLinesToDraw;
@@ -254,6 +279,7 @@ void drawLine(WeavingThread wt) {
   if(maxValue>CUTOFF) return;
 
   println(totalLinesDrawn+" : "+wt.name+"\t"+maxA+"\t"+maxB+"\t"+maxValue);
+  steps[stepPlace++] = totalLinesDrawn+": \t"+wt.name+"\t"+maxA+"\t"+maxB;
   
   drawToDest(maxA, maxB, wt.c);
   wt.done[maxA*numberOfPoints+maxB]=20;

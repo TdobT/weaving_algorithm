@@ -1,0 +1,1150 @@
+0: 	black	60	61
+1: 	gray	97	98
+2: 	blallo	132	225
+3: 	blue	80	81
+4: 	green	63	64
+5: 	black	61	29
+6: 	gray	98	102
+7: 	blallo	225	129
+8: 	blue	81	154
+9: 	green	64	121
+10: 	black	29	30
+11: 	gray	102	95
+12: 	blallo	129	122
+13: 	blue	154	80
+14: 	green	121	119
+15: 	black	30	27
+16: 	gray	95	103
+17: 	blallo	122	123
+18: 	blue	80	155
+19: 	green	119	130
+20: 	black	27	85
+21: 	gray	103	109
+22: 	blallo	123	128
+23: 	blue	155	81
+24: 	green	130	120
+25: 	black	85	29
+26: 	gray	109	106
+27: 	blallo	128	224
+28: 	blue	81	156
+29: 	green	120	139
+30: 	black	29	80
+31: 	gray	106	177
+32: 	blallo	224	130
+33: 	blue	156	0
+34: 	green	139	140
+35: 	black	80	1
+36: 	gray	177	101
+37: 	blallo	130	134
+38: 	blue	0	163
+39: 	green	140	61
+40: 	black	1	155
+41: 	gray	101	100
+42: 	blallo	134	135
+43: 	blue	163	86
+44: 	green	61	66
+45: 	black	155	28
+46: 	gray	100	180
+47: 	blallo	135	224
+48: 	blue	86	164
+49: 	green	66	1
+50: 	black	28	79
+51: 	gray	180	179
+52: 	blallo	224	132
+53: 	blue	164	83
+54: 	green	1	153
+55: 	black	79	30
+56: 	gray	179	100
+57: 	blallo	132	26
+58: 	blue	83	165
+59: 	green	153	79
+60: 	black	30	84
+61: 	gray	100	96
+62: 	blallo	26	76
+63: 	blue	165	85
+64: 	green	79	154
+65: 	black	84	29
+66: 	gray	96	181
+67: 	blallo	76	75
+68: 	blue	85	162
+69: 	green	154	23
+70: 	black	29	154
+71: 	gray	181	100
+72: 	blallo	75	27
+73: 	blue	162	84
+74: 	green	23	63
+75: 	black	154	124
+76: 	gray	100	109
+77: 	blallo	27	131
+78: 	blue	84	165
+79: 	green	63	122
+80: 	black	124	79
+81: 	gray	109	49
+82: 	blallo	131	225
+83: 	blue	165	191
+84: 	green	122	202
+85: 	black	79	0
+86: 	gray	49	50
+87: 	blallo	225	67
+88: 	blue	191	196
+89: 	green	202	101
+90: 	black	0	23
+91: 	gray	50	106
+92: 	blallo	67	146
+93: 	blue	196	202
+94: 	green	101	173
+95: 	black	23	62
+96: 	gray	106	94
+97: 	blallo	146	73
+98: 	blue	202	200
+99: 	green	173	110
+100: 	black	62	29
+101: 	gray	94	103
+102: 	blallo	73	131
+103: 	blue	200	208
+104: 	green	110	109
+105: 	black	29	76
+106: 	gray	103	93
+107: 	blallo	131	226
+108: 	blue	208	202
+109: 	green	109	95
+110: 	black	76	30
+111: 	gray	93	51
+112: 	blallo	226	63
+113: 	blue	202	206
+114: 	green	95	199
+115: 	black	30	85
+116: 	gray	51	39
+117: 	blallo	63	133
+118: 	blue	206	207
+119: 	green	199	107
+120: 	black	85	28
+121: 	gray	39	37
+122: 	blallo	133	224
+123: 	blue	207	220
+124: 	green	107	197
+125: 	black	28	29
+126: 	gray	37	181
+127: 	blallo	224	25
+128: 	blue	220	217
+129: 	green	197	177
+130: 	black	29	63
+131: 	gray	181	177
+132: 	blallo	25	65
+133: 	blue	217	216
+134: 	green	177	102
+135: 	black	63	67
+136: 	gray	177	198
+137: 	blallo	65	138
+138: 	blue	216	205
+139: 	green	102	111
+140: 	black	67	60
+141: 	gray	198	119
+142: 	blallo	138	139
+143: 	blue	205	203
+144: 	green	111	205
+145: 	black	60	65
+146: 	gray	119	197
+147: 	blallo	139	126
+148: 	blue	203	189
+149: 	green	205	137
+150: 	black	65	23
+151: 	gray	197	178
+152: 	blallo	126	225
+153: 	blue	189	106
+154: 	green	137	145
+155: 	black	23	82
+156: 	gray	178	114
+157: 	blallo	225	130
+158: 	blue	106	188
+159: 	green	145	140
+160: 	black	82	0
+161: 	gray	114	99
+162: 	blallo	130	66
+163: 	blue	188	187
+164: 	green	140	123
+165: 	black	0	22
+166: 	gray	99	180
+167: 	blallo	66	137
+168: 	blue	187	196
+169: 	green	123	60
+170: 	black	22	62
+171: 	gray	180	47
+172: 	blallo	137	238
+173: 	blue	196	193
+174: 	green	60	155
+175: 	black	62	122
+176: 	gray	47	46
+177: 	blallo	238	239
+178: 	blue	193	192
+179: 	green	155	75
+180: 	black	122	69
+181: 	gray	46	111
+182: 	blallo	239	70
+183: 	blue	192	106
+184: 	green	75	29
+185: 	black	69	164
+186: 	gray	111	94
+187: 	blallo	70	71
+188: 	blue	106	186
+189: 	green	29	64
+190: 	black	164	163
+191: 	gray	94	52
+192: 	blallo	71	78
+193: 	blue	186	197
+194: 	green	64	123
+195: 	black	163	162
+196: 	gray	52	40
+197: 	blallo	78	149
+198: 	blue	197	180
+199: 	green	123	133
+200: 	black	162	165
+201: 	gray	40	39
+202: 	blallo	149	150
+203: 	blue	180	97
+204: 	green	133	125
+205: 	black	165	28
+206: 	gray	39	112
+207: 	blallo	150	151
+208: 	blue	97	185
+209: 	green	125	204
+210: 	black	28	80
+211: 	gray	112	44
+212: 	blallo	151	75
+213: 	blue	185	95
+214: 	green	204	119
+215: 	black	80	152
+216: 	gray	44	95
+217: 	blallo	75	26
+218: 	blue	95	183
+219: 	green	119	129
+220: 	black	152	153
+221: 	gray	95	42
+222: 	blallo	26	78
+223: 	blue	183	197
+224: 	green	129	66
+225: 	black	153	78
+226: 	gray	42	50
+227: 	blallo	78	148
+228: 	blue	197	200
+229: 	green	66	139
+230: 	black	78	30
+231: 	gray	50	111
+232: 	blallo	148	27
+233: 	blue	200	108
+234: 	green	139	239
+235: 	black	30	26
+236: 	gray	111	206
+237: 	blallo	27	134
+238: 	blue	108	187
+239: 	green	239	72
+240: 	black	26	84
+241: 	gray	206	177
+242: 	blallo	134	226
+243: 	blue	187	98
+244: 	green	72	143
+245: 	black	84	83
+246: 	gray	177	113
+247: 	blallo	226	129
+248: 	blue	98	174
+249: 	green	143	124
+250: 	black	83	28
+251: 	gray	113	95
+252: 	blallo	129	224
+253: 	blue	174	38
+254: 	green	124	203
+255: 	black	28	77
+256: 	gray	95	194
+257: 	blallo	224	131
+258: 	blue	38	48
+259: 	green	203	108
+260: 	black	77	61
+261: 	gray	194	103
+262: 	blallo	131	227
+263: 	blue	48	49
+264: 	green	108	201
+265: 	black	61	134
+266: 	gray	103	110
+267: 	blallo	227	132
+268: 	blue	49	19
+269: 	green	201	131
+270: 	black	134	62
+271: 	gray	110	99
+272: 	blallo	132	131
+273: 	blue	19	44
+274: 	green	131	30
+275: 	black	62	65
+276: 	gray	99	198
+277: 	blallo	131	72
+278: 	blue	44	50
+279: 	green	30	0
+280: 	black	65	59
+281: 	gray	198	105
+282: 	blallo	72	146
+283: 	blue	50	92
+284: 	green	0	152
+285: 	black	59	135
+286: 	gray	105	178
+287: 	blallo	146	143
+288: 	blue	92	194
+289: 	green	152	79
+290: 	black	135	65
+291: 	gray	178	179
+292: 	blallo	143	239
+293: 	blue	194	195
+294: 	green	79	128
+295: 	black	65	162
+296: 	gray	179	97
+297: 	blallo	239	138
+298: 	blue	195	115
+299: 	green	128	119
+300: 	black	162	64
+301: 	gray	97	174
+302: 	blallo	138	71
+303: 	blue	115	114
+304: 	green	119	209
+305: 	black	64	1
+306: 	gray	174	99
+307: 	blallo	71	140
+308: 	blue	114	48
+309: 	green	209	179
+310: 	black	1	29
+311: 	gray	99	47
+312: 	blallo	140	146
+313: 	blue	48	187
+314: 	green	179	115
+315: 	black	29	79
+316: 	gray	47	40
+317: 	blallo	146	147
+318: 	blue	187	192
+319: 	green	115	197
+320: 	black	79	61
+321: 	gray	40	51
+322: 	blallo	147	68
+323: 	blue	192	189
+324: 	green	197	179
+325: 	black	61	80
+326: 	gray	51	38
+327: 	blallo	68	67
+328: 	blue	189	188
+329: 	green	179	94
+330: 	black	80	153
+331: 	gray	38	41
+332: 	blallo	67	72
+333: 	blue	188	101
+334: 	green	94	108
+335: 	black	153	30
+336: 	gray	41	46
+337: 	blallo	72	238
+338: 	blue	101	190
+339: 	green	108	104
+340: 	black	30	83
+341: 	gray	46	93
+342: 	blallo	238	138
+343: 	blue	190	202
+344: 	green	104	50
+345: 	black	83	66
+346: 	gray	93	106
+347: 	blallo	138	67
+348: 	blue	202	214
+349: 	green	50	47
+350: 	black	66	67
+351: 	gray	106	107
+352: 	blallo	67	25
+353: 	blue	214	222
+354: 	green	47	111
+355: 	black	67	139
+356: 	gray	107	49
+357: 	blallo	25	76
+358: 	blue	222	209
+359: 	green	111	204
+360: 	black	139	121
+361: 	gray	49	41
+362: 	blallo	76	24
+363: 	blue	209	214
+364: 	green	204	117
+365: 	black	121	119
+366: 	gray	41	53
+367: 	blallo	24	139
+368: 	blue	214	224
+369: 	green	117	116
+370: 	black	119	132
+371: 	gray	53	95
+372: 	blallo	139	134
+373: 	blue	224	212
+374: 	green	116	196
+375: 	black	132	122
+376: 	gray	95	100
+377: 	blallo	134	223
+378: 	blue	212	200
+379: 	green	196	110
+380: 	black	122	71
+381: 	gray	100	171
+382: 	blallo	223	69
+383: 	blue	200	120
+384: 	green	110	97
+385: 	black	71	123
+386: 	gray	171	97
+387: 	blallo	69	147
+388: 	blue	120	50
+389: 	green	97	175
+390: 	black	123	202
+391: 	gray	97	204
+392: 	blallo	147	140
+393: 	blue	50	22
+394: 	green	175	116
+395: 	black	202	108
+396: 	gray	204	40
+397: 	blallo	140	144
+398: 	blue	22	13
+399: 	green	116	193
+400: 	black	108	111
+401: 	gray	40	179
+402: 	blallo	144	239
+403: 	blue	13	18
+404: 	green	193	111
+405: 	black	111	110
+406: 	gray	179	200
+407: 	blallo	239	141
+408: 	blue	18	15
+409: 	green	111	93
+410: 	black	110	98
+411: 	gray	200	93
+412: 	blallo	141	140
+413: 	blue	15	16
+414: 	green	93	182
+415: 	black	98	111
+416: 	gray	93	39
+417: 	blallo	140	66
+418: 	blue	16	52
+419: 	green	182	37
+420: 	black	111	106
+421: 	gray	39	115
+422: 	blallo	66	153
+423: 	blue	52	208
+424: 	green	37	46
+425: 	black	106	112
+426: 	gray	115	173
+427: 	blallo	153	154
+428: 	blue	208	222
+429: 	green	46	51
+430: 	black	112	47
+431: 	gray	173	194
+432: 	blallo	154	74
+433: 	blue	222	223
+434: 	green	51	205
+435: 	black	47	48
+436: 	gray	194	170
+437: 	blallo	74	150
+438: 	blue	223	208
+439: 	green	205	225
+440: 	black	48	108
+441: 	gray	170	44
+442: 	blallo	150	78
+443: 	blue	208	117
+444: 	green	225	201
+445: 	black	108	139
+446: 	gray	44	8
+447: 	blallo	78	145
+448: 	blue	117	118
+449: 	green	201	121
+450: 	black	139	144
+451: 	gray	8	45
+452: 	blallo	145	146
+453: 	blue	118	196
+454: 	green	121	60
+455: 	black	144	143
+456: 	gray	45	92
+457: 	blallo	146	142
+458: 	blue	196	181
+459: 	green	60	77
+460: 	black	143	147
+461: 	gray	92	41
+462: 	blallo	142	143
+463: 	blue	181	183
+464: 	green	77	155
+465: 	black	147	31
+466: 	gray	41	94
+467: 	blallo	143	67
+468: 	blue	183	193
+469: 	green	155	154
+470: 	black	31	27
+471: 	gray	94	181
+472: 	blallo	67	226
+473: 	blue	193	179
+474: 	green	154	151
+475: 	black	27	1
+476: 	gray	181	44
+477: 	blallo	226	135
+478: 	blue	179	196
+479: 	green	151	80
+480: 	black	1	28
+481: 	gray	44	174
+482: 	blallo	135	238
+483: 	blue	196	184
+484: 	green	80	155
+485: 	black	28	22
+486: 	gray	174	103
+487: 	blallo	238	70
+488: 	blue	184	101
+489: 	green	155	24
+490: 	black	22	125
+491: 	gray	103	197
+492: 	blallo	70	76
+493: 	blue	101	172
+494: 	green	24	153
+495: 	black	125	155
+496: 	gray	197	117
+497: 	blallo	76	152
+498: 	blue	172	30
+499: 	green	153	76
+500: 	black	155	22
+501: 	gray	117	40
+502: 	blallo	152	148
+503: 	blue	30	155
+504: 	green	76	125
+505: 	black	22	64
+506: 	gray	40	91
+507: 	blallo	148	75
+508: 	blue	155	82
+509: 	green	125	143
+510: 	black	64	135
+511: 	gray	91	116
+512: 	blallo	75	150
+513: 	blue	82	164
+514: 	green	143	128
+515: 	black	135	119
+516: 	gray	116	113
+517: 	blallo	150	76
+518: 	blue	164	31
+519: 	green	128	72
+520: 	black	119	131
+521: 	gray	113	48
+522: 	blallo	76	151
+523: 	blue	31	33
+524: 	green	72	61
+525: 	black	131	121
+526: 	gray	48	200
+527: 	blallo	151	73
+528: 	blue	33	22
+529: 	green	61	227
+530: 	black	121	138
+531: 	gray	200	118
+532: 	blallo	73	238
+533: 	blue	22	53
+534: 	green	227	205
+535: 	black	138	141
+536: 	gray	118	112
+537: 	blallo	238	143
+538: 	blue	53	15
+539: 	green	205	100
+540: 	black	141	122
+541: 	gray	112	95
+542: 	blallo	143	234
+543: 	blue	15	5
+544: 	green	100	176
+545: 	black	122	238
+546: 	gray	95	38
+547: 	blallo	234	138
+548: 	blue	5	38
+549: 	green	176	101
+550: 	black	238	124
+551: 	gray	38	113
+552: 	blallo	138	237
+553: 	blue	38	10
+554: 	green	101	8
+555: 	black	124	134
+556: 	gray	113	192
+557: 	blallo	237	238
+558: 	blue	10	20
+559: 	green	8	102
+560: 	black	134	119
+561: 	gray	192	212
+562: 	blallo	238	78
+563: 	blue	20	14
+564: 	green	102	180
+565: 	black	119	133
+566: 	gray	212	118
+567: 	blallo	78	223
+568: 	blue	14	0
+569: 	green	180	179
+570: 	black	133	132
+571: 	gray	118	198
+572: 	blallo	223	135
+573: 	blue	0	60
+574: 	green	179	199
+575: 	black	132	84
+576: 	gray	198	106
+577: 	blallo	135	225
+578: 	blue	60	21
+579: 	green	199	119
+580: 	black	84	63
+581: 	gray	106	99
+582: 	blallo	225	224
+583: 	blue	21	13
+584: 	green	119	203
+585: 	black	63	82
+586: 	gray	99	170
+587: 	blallo	224	136
+588: 	blue	13	23
+589: 	green	203	122
+590: 	black	82	30
+591: 	gray	170	116
+592: 	blallo	136	232
+593: 	blue	23	116
+594: 	green	122	206
+595: 	black	30	163
+596: 	gray	116	49
+597: 	blallo	232	231
+598: 	blue	116	57
+599: 	green	206	225
+600: 	black	163	31
+601: 	gray	49	114
+602: 	blallo	231	208
+603: 	blue	57	91
+604: 	green	225	204
+605: 	black	31	152
+606: 	gray	114	50
+607: 	blallo	208	124
+608: 	blue	91	31
+609: 	green	204	121
+610: 	black	152	29
+611: 	gray	50	37
+612: 	blallo	124	226
+613: 	blue	31	165
+614: 	green	121	72
+615: 	black	29	83
+616: 	gray	37	47
+617: 	blallo	226	225
+618: 	blue	165	80
+619: 	green	72	144
+620: 	black	83	63
+621: 	gray	47	42
+622: 	blallo	225	133
+623: 	blue	80	157
+624: 	green	144	136
+625: 	black	63	78
+626: 	gray	42	96
+627: 	blallo	133	235
+628: 	blue	157	156
+629: 	green	136	162
+630: 	black	78	80
+631: 	gray	96	173
+632: 	blallo	235	139
+633: 	blue	156	155
+634: 	green	162	160
+635: 	black	80	154
+636: 	gray	173	198
+637: 	blallo	139	236
+638: 	blue	155	53
+639: 	green	160	165
+640: 	black	154	77
+641: 	gray	198	179
+642: 	blallo	236	137
+643: 	blue	53	119
+644: 	green	165	159
+645: 	black	77	27
+646: 	gray	179	92
+647: 	blallo	137	76
+648: 	blue	119	54
+649: 	green	159	166
+650: 	black	27	80
+651: 	gray	92	52
+652: 	blallo	76	237
+653: 	blue	54	16
+654: 	green	166	157
+655: 	black	80	0
+656: 	gray	52	173
+657: 	blallo	237	72
+658: 	blue	16	37
+659: 	green	157	165
+660: 	black	0	67
+661: 	gray	173	39
+662: 	blallo	72	134
+663: 	blue	37	3
+664: 	green	165	146
+665: 	black	67	61
+666: 	gray	39	95
+667: 	blallo	134	237
+668: 	blue	3	8
+669: 	green	146	138
+670: 	black	61	20
+671: 	gray	95	54
+672: 	blallo	237	142
+673: 	blue	8	92
+674: 	green	138	164
+675: 	black	20	48
+676: 	gray	54	94
+677: 	blallo	142	151
+678: 	blue	92	32
+679: 	green	164	30
+680: 	black	48	109
+681: 	gray	94	112
+682: 	blallo	151	26
+683: 	blue	32	22
+684: 	green	30	161
+685: 	black	109	51
+686: 	gray	112	96
+687: 	blallo	26	149
+688: 	blue	22	163
+689: 	green	161	83
+690: 	black	51	47
+691: 	gray	96	179
+692: 	blallo	149	74
+693: 	blue	163	80
+694: 	green	83	85
+695: 	black	47	104
+696: 	gray	179	99
+697: 	blallo	74	26
+698: 	blue	80	162
+699: 	green	85	65
+700: 	black	104	111
+701: 	gray	99	195
+702: 	blallo	26	67
+703: 	blue	162	16
+704: 	green	65	66
+705: 	black	111	99
+706: 	gray	195	175
+707: 	blallo	67	24
+708: 	blue	16	51
+709: 	green	66	127
+710: 	black	99	100
+711: 	gray	175	194
+712: 	blallo	24	75
+713: 	blue	51	118
+714: 	green	127	228
+715: 	black	100	111
+716: 	gray	194	117
+717: 	blallo	75	145
+718: 	blue	118	53
+719: 	green	228	131
+720: 	black	111	203
+721: 	gray	117	198
+722: 	blallo	145	73
+723: 	blue	53	19
+724: 	green	131	233
+725: 	black	203	120
+726: 	gray	198	109
+727: 	blallo	73	236
+728: 	blue	19	118
+729: 	green	233	165
+730: 	black	120	131
+731: 	gray	109	102
+732: 	blallo	236	208
+733: 	blue	118	59
+734: 	green	165	151
+735: 	black	131	23
+736: 	gray	102	178
+737: 	blallo	208	229
+738: 	blue	59	89
+739: 	green	151	79
+740: 	black	23	61
+741: 	gray	178	177
+742: 	blallo	229	207
+743: 	blue	89	39
+744: 	green	79	150
+745: 	black	61	136
+746: 	gray	177	196
+747: 	blallo	207	226
+748: 	blue	39	169
+749: 	green	150	2
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
+null
